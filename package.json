@@ -9,6 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource/anton": "^5.2.6",
+    "@fontsource/ubuntu": "^5.2.6",
     "astro": "^5.9.4"
   }
 }
