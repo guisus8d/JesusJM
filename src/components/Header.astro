@@ -5,8 +5,7 @@ import '@fontsource/anton';
 
 import '@fontsource/ubuntu';
 
-
-
+import FotoDePerfil from '../assets/FotoDePerfil.jpg';
 ---
 
 <!-- contendido de [Header] -->
@@ -39,10 +38,11 @@ import '@fontsource/ubuntu';
       </button>
       <ul>
         <li><a href="/">HOME</a></li>
-        <li><a href="/about">SKILLS</a></li>
+        <li><a href="/Skills">SKILLS</a></li>
+        <center><div class="FotoDePerfil"></div></center>
         <li><a href="/services">SERVICES</a></li>
         <li><a href="/portfolio">PROYECTS</a></li>
-        <li><a href="/contact">CONTACTS</a></li>
+
       </ul>
     </nav>
   </div>
@@ -145,6 +145,18 @@ import '@fontsource/ubuntu';
     height: 25px;
     right: 0px;
     margin: 17px;
+  }
+
+
+  .FotoDePerfil{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background: url('../assets/FotoDePerfil.jpg') center no-repeat;
+    background-size: cover;
+
+
   }
 </style>
 
