@@ -1,9 +1,12 @@
 ---
 import ImgLogo from '../../public/Logo.svg';
-
+import iconoMenu from '../assets/menu.png';
 import '@fontsource/anton';
 
 import '@fontsource/ubuntu';
+
+
+
 ---
 
 <!-- contendido de [Header] -->
@@ -17,8 +20,16 @@ import '@fontsource/ubuntu';
       src={ImgLogo.src} 
       alt="Logo de la pagina" 
       class="logo"
-      id="menuToggle"
+      
     />
+
+    <img 
+    src={iconoMenu.src} 
+    alt="Menu de opciones dentro del Header" 
+    class="Iconomenu"
+    id="menuToggle"
+    />
+
     <nav class="fullscreen-menu" id="fullscreenMenu">
       <button class="close-button" id="closeButton" aria-label="Cerrar menú">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -126,6 +137,14 @@ import '@fontsource/ubuntu';
 
   .fullscreen-menu a:hover {
     color: #ffffff;
+  }
+
+  .Iconomenu{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0px;
+    margin: 17px;
   }
 </style>
 
