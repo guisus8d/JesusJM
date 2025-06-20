@@ -3,11 +3,84 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
+
+import '@fontsource/anton';
+import '@fontsource/ubuntu';
 ---
 
 
 <Layout>
     <Header />
+    <div class="ContenedorPrincipalDeSkills">
+     <center>
+     <div class="FotoDePerfil"></div>
+     <p class="JesusJM">Jesus <nav class="extenJesusJM">JM</nav> </p>
 
+     <p class="ContenedorDeTextoAntesDeSkill">
+      I simply love everything related to technology, especially 
+      when it comes to programming. I have a strong focus on front-end
+       and back-end.
+     </p>
+     
+     <div class="TextoDePerfilSkills">
+       Skills
+     </div>
+
+     </center>
+    </div>
     <Footer />
 </Layout>
+
+<style>
+    .ContenedorPrincipalDeSkills{
+       position: relative;
+	   width: 100%;
+	   padding: 30px 0px;
+	   background: rgb(19, 19, 19);
+    }
+    .FotoDePerfil{
+      position: relative;
+      height: 100px;
+      width: 100px;
+      background: url('../assets/FotoDePerfil.jpg') center no-repeat;
+      background-size: cover;
+      border-radius: 50px;
+      border: 3px solid #c1ff72;
+      margin-top: 20px;
+    }
+    .JesusJM, nav{
+        color: white;
+		font-family: 'Ubuntu', sans-serif;
+		letter-spacing: 0.5px;
+		font-size: 20px;
+		font-weight: 900;
+        display: inline-block;
+    }
+    .extenJesusJM{
+        color: #c1ff72;
+    }
+
+    .ContenedorDeTextoAntesDeSkill{
+        color: rgba(255, 255, 255, 0.884);
+		font-family: 'Ubuntu', sans-serif;
+		width: 85%;
+		font-size: 12px;
+        text-align: left;
+        max-width: 320px;
+    }
+   
+     .TextoDePerfilSkills{
+        position: relative;
+        left: -105px;
+        margin-top: 20px;
+        color: #c1ff72;
+        border: 2px solid #c1ff72;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 12px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        width: 90px;
+        
+
+     }
+</style>
