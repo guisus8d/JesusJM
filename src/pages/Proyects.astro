@@ -8,13 +8,16 @@ import "@fontsource/ubuntu";
 
 // Imagenes de el apartado de proyectos
 import ProyectoUNO from "../assets/proyectos/ProyectoUNO.png";
+import IconoGitHub from "../assets/proyectos/IconoGitHub.svg";
 ---
 
 <Layout>
     <Header />
 
     <div class="ContenedorPrincipalProyectos">
-        <div class="Proyectos">
+        <!-- contenedor de los proyectos desarrollados -->
+
+           <div class="Proyectos">
             <img
                 class="ImgDeProyectos"
                 src={ProyectoUNO.src}
@@ -28,8 +31,74 @@ import ProyectoUNO from "../assets/proyectos/ProyectoUNO.png";
                  Steren, con el objetivo de simular procesos empresariales 
                  reales.</p>
 
+                 <a href="">
+                    <img class="IconoGitHubDelProyecto" src={IconoGitHub.src} alt="icono de git hub para redirigir al usuario al repositorio git hub">
+                 </a>
+                 
+                 <a href="" class="BtnRedirigirAlSitioWebDelproyecto">
+                    <button>Site 
+                        +
+                    </button>
+                 </a>
+
             </div>
-        </div>
+            </div>
+
+            
+
+            <div class="Proyectos">
+            <img
+                class="ImgDeProyectos"
+                src={ProyectoUNO.src}
+                alt="Imagen del primer proyecto de el apartado de proyectos"
+            />
+            <div class="ContenedorDeTextoDelproyecto">
+             <p class="TituloDelProyecto"><strong>Steren</strong></p>
+
+             <p class="DescripcionDelProyecto">Desarrollo de una réplica de un sistema de ventas a pequeña escala, 
+                inspirado en la estructura y funcionalidades de la empresa
+                 Steren, con el objetivo de simular procesos empresariales 
+                 reales.</p>
+
+                 <a href="">
+                    <img class="IconoGitHubDelProyecto" src={IconoGitHub.src} alt="icono de git hub para redirigir al usuario al repositorio git hub">
+                 </a>
+                 
+                 <a href="" class="BtnRedirigirAlSitioWebDelproyecto">
+                    <button>Site 
+                        +
+                    </button>
+                 </a>
+
+            </div>
+            </div>
+
+                        <div class="Proyectos">
+            <img
+                class="ImgDeProyectos"
+                src={ProyectoUNO.src}
+                alt="Imagen del primer proyecto de el apartado de proyectos"
+            />
+            <div class="ContenedorDeTextoDelproyecto">
+             <p class="TituloDelProyecto"><strong>Steren</strong></p>
+
+             <p class="DescripcionDelProyecto">Desarrollo de una réplica de un sistema de ventas a pequeña escala, 
+                inspirado en la estructura y funcionalidades de la empresa
+                 Steren, con el objetivo de simular procesos empresariales 
+                 reales.</p>
+
+                 <a href="">
+                    <img class="IconoGitHubDelProyecto" src={IconoGitHub.src} alt="icono de git hub para redirigir al usuario al repositorio git hub">
+                 </a>
+                 
+                 <a href="" class="BtnRedirigirAlSitioWebDelproyecto">
+                    <button>Site 
+                        +
+                    </button>
+                 </a>
+
+            </div>
+            </div>
     </div>
 
     <Footer />
@@ -53,8 +122,7 @@ import ProyectoUNO from "../assets/proyectos/ProyectoUNO.png";
 
 
     }
-
-    .Proyectos {
+         .Proyectos {
         position: relative;
         width: 90%;
         max-width: 500px;
@@ -64,13 +132,16 @@ import ProyectoUNO from "../assets/proyectos/ProyectoUNO.png";
         justify-content: center;
         align-items: center;
         padding-bottom: 100px;
+        margin: 40px 40px;
 
     }
+
+ 
 
     .ContenedorDeTextoDelproyecto{
         position: absolute;
         width: 100%;
-        padding: 30px 0px;
+        padding: 10px 0px;
         background: rgb(0, 0, 0);
         bottom: 0px;     
     }
@@ -87,4 +158,41 @@ import ProyectoUNO from "../assets/proyectos/ProyectoUNO.png";
        font-size: 10px;
        margin-left: 20px;
     }
+
+    .IconoGitHubDelProyecto{
+        position: relative;
+        width: 30px;
+        margin-left: 20px;
+    }
+    .BtnRedirigirAlSitioWebDelproyecto button{
+        position: relative;
+        top: -10px;
+        margin-left: 10px;
+        border: none;
+        color: #c1ff72;
+        border: 2px solid #c1ff72;
+        background: transparent;
+        padding: 5px 30px;
+        border-radius: 20px;
+      
+
+        
+    }
+
+    /* Estilos propios de los disposivos moviles */
+    @media (max-width: 600px) {
+     .Proyectos {
+        position: relative;
+        width: 90%;
+        max-width: 500px;
+        background: rgba(255, 255, 255, 0.384);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px;
+        margin: 40px 0px;
+
+    }
+}
 </style>
