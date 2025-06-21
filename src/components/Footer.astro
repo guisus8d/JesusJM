@@ -1,33 +1,39 @@
 ---
-
 // importar las imagenes bueno los iconos que contendra el footer
 
-import IconoFacebook from '../assets/FooterIcono/facebook.svg';
-import IconoInstagram from '../assets/FooterIcono/instagram.svg';
-import IconoGithub from '../assets/FooterIcono/github.svg';
+import IconoFacebook from "../assets/FooterIcono/facebook.svg";
+import IconoInstagram from "../assets/FooterIcono/instagram.svg";
+import IconoGithub from "../assets/FooterIcono/github.svg";
 ---
 
 <!-- contenedor de [footer] -->
 <footer>
-<div class="footer">
+    <div class="footer">
+        <div class="ContenedorDeIconos">
+            <img src={IconoFacebook.src} alt="Icono De Facebook" />
+        </div>
 
-<div class="ContenedorDeIconos">
-<img src={IconoFacebook.src} alt="Icono De Facebook">
-</div>
+        <a href="https://www.instagram.com/gitjjm/">
+            <div class="ContenedorDeIconos">
+                <img src={IconoInstagram.src} alt="Icono De Instagram" />
+            </div>
+        </a>
 
-<div class="ContenedorDeIconos">
-<img src={IconoInstagram.src} alt="Icono De Instagram">
-</div>
-
-<div class="ContenedorDeIconos">
-<img src={IconoGithub.src} alt="Icono De Github">
-</div>
-
-</div>
+        <a href="https://github.com/guisus8d">
+            <div class="ContenedorDeIconos">
+                <img src={IconoGithub.src} alt="Icono De Github" />
+            </div>
+        </a>
+    </div>
 </footer>
 
 <style>
-    .footer{
+    a {
+        -webkit-tap-highlight-color: transparent;
+        text-decoration: none;
+    }
+
+    .footer {
         position: relative;
         width: 100%;
         height: 70px;
@@ -37,19 +43,19 @@ import IconoGithub from '../assets/FooterIcono/github.svg';
         align-items: center;
     }
 
-    .ContenedorDeIconos{
-     position: relative;
-     width: 35px;
-     height: 35px;
-     background: rgba(114, 114, 114, 0.658);
-     border-radius: 50%;
-     margin: 20px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    .ContenedorDeIconos {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        background: rgba(114, 114, 114, 0.658);
+        border-radius: 50%;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .ContenedorDeIconos img{
+    .ContenedorDeIconos img {
         width: 25px;
     }
 </style>
