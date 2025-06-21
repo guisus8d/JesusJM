@@ -1,450 +1,466 @@
 ---
-
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import JesusJM from '../assets/jesusjm.svg';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import JesusJM from "../assets/jesusjm.svg";
 
 // importar [font de letra]
 
-import '@fontsource/anton';
+import "@fontsource/anton";
 
-import '@fontsource/ubuntu';
+import "@fontsource/ubuntu";
 ---
 
 <Layout>
-	<Header />
-	 <div class="ContenedorInicio">
-      <div class="ContenedorDeInformacionInicio">
-            <p class="titulo">
-				Jesus JM
-			</p>
+  <Header />
+  <div class="ContenedorInicio">
+    <div class="ContenedorDeInformacionInicio">
+      <p class="titulo">Jesus JM</p>
 
-			<p class="bienvenida">
-              Welcome to my professional portfolio. 
-			  Here you will find information about my skills,
-			   experience, and the projects I have developed.
-			</p>
-
-			<div class="ContenedorDeBotones">
-              <a href="" class="skillsBtn"><button>Skills</button></a>
-			  <a href="" class="contacsBtn"><button>Contacts</button></a>
-			</div>
-
-
-			<!-- From Uiverse.io by mymiamo --> 
-<div class="card">
-  <div class="mac-header">
-    <span class="red"></span>
-    <span class="yellow"></span>
-    <span class="green"></span>
-  </div>
-  <span class="card-title">Skills</span>
-  <p class="card-description">
-    a look at my portfolio of work as a web developer.
-  </p>
-  <span class="card-tag">TAG JS</span> <span class="card-tag">TAG JS</span>
-  <div class="code-editor">
-    <pre><code>frontend: HTML, CSS
-backend: MySQL, Node.js
-languages: JavaScript, PHP<code></pre>
-
-
-  </div>
-</div>
-	  </div>  
-
-	  <center>
-	  <img src={JesusJM.src} alt="Imagene ver mas del desarrollo web" class="VerMasImg">
-    </center>
-
-
-
-<center>
- <div class="pack-container">
-    <div class="header">
-      <p class="title">
-        First Plan
+      <p class="bienvenida">
+        Welcome to my professional portfolio. Here you will find information
+        about my skills, experience, and the projects I have developed.
       </p>
-      <div class="price-container">
-        <span>$</span>2000
-        <span>/mo</span>
+
+      <div class="ContenedorDeBotones">
+        <a href="" class="skillsBtn"><button>Skills</button></a>
+        <a href="" class="contacsBtn"><button>Contacts</button></a>
       </div>
+
+      <!-- From Uiverse.io by mymiamo -->
+      <div class="card">
+        <div class="mac-header">
+          <span class="red"></span>
+          <span class="yellow"></span>
+          <span class="green"></span>
+        </div>
+        <span class="card-title">Skills</span>
+        <p class="card-description">
+          a look at my portfolio of work as a web developer.
+        </p>
+        <span class="card-tag">TAG JS</span>
+        <span class="card-tag">TAG JS</span>
+        <div class="code-editor">
+          <pre><code>frontend: HTML, CSS
+backend: MySQL, Node.js
+languages: JavaScript, PHP<code />
+
+
+  </code>
+</pre>
+        </div>
+
+        <center>
+          <img
+            src={JesusJM.src}
+            alt="Imagene ver mas del desarrollo web"
+            class="VerMasImg"
+          />
+        </center>
+
+        <center>
+          <div class="pack-container">
+            <div class="header">
+              <p class="title">First Plan</p>
+              <div class="price-container">
+                <span>$</span>2000
+                <span>/mo</span>
+              </div>
+            </div>
+            <div>
+              <ul class="lists">
+                <li class="list">
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.5 12.75l6 6 9-13.5"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"></path>
+                    </svg>
+                  </span>
+                  <p>coupled domain</p>
+                </li>
+                <li class="list">
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.5 12.75l6 6 9-13.5"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"></path>
+                    </svg>
+                  </span>
+                  <p>interactive website</p>
+                </li>
+                <li class="list">
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.5 12.75l6 6 9-13.5"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"></path>
+                    </svg>
+                  </span>
+                  <p>updates</p>
+                </li>
+                <li class="list">
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.5 12.75l6 6 9-13.5"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"></path>
+                    </svg>
+                  </span>
+                  <p>coupled to your needs</p>
+                </li>
+              </ul>
+            </div>
+            <div class="button-container">
+              <button type="button"> Buy Now </button>
+            </div>
+          </div>
+        </center>
+      </div>
+      <Footer />
     </div>
-    <div>
-      <ul class="lists">
-        <li class="list">
-          <span>
-            <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
-            </svg>
-          </span>
-          <p>
-            coupled domain
-          </p>
-        </li>
-        <li class="list">
-          <span>
-            <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
-            </svg>
-          </span>
-          <p>          
-           interactive website
-          </p>
-        </li>
-        <li class="list">
-          <span>
-            <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
-            </svg>
-          </span>
-          <p>
-           updates
-          </p>
-        </li>
-        <li class="list">
-          <span>
-            <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
-            </svg>
-          </span>
-          <p>
-            coupled to your needs
-          </p>
 
-        </li>
-        
-      
-      </ul>
-    </div>
-    <div class="button-container">
-      <button type="button">
-        Buy Now
-      </button>
-    </div>
-  </div>
-</center>
-    
-	 </div>
-	 <Footer />
-</Layout>
+    <style>
+      a {
+        -webkit-tap-highlight-color: transparent;
+        text-decoration: none;
+      }
 
-<style>
-    a {
-  -webkit-tap-highlight-color: transparent;
-  text-decoration: none;
-  
-}
+      .ContenedorInicio {
+        position: relative;
+        width: 100%;
+        padding: 30px 0px;
+        background: rgb(19, 19, 19);
+      }
 
-	.ContenedorInicio{
-	   position: relative;
-	   width: 100%;
-	   padding: 30px 0px;
-	   background: rgb(19, 19, 19);
-	}
+      .ContenedorDeInformacionInicio {
+        width: 90%;
+        max-width: 560px;
+        background: transparent;
+        margin: 10px;
+        padding: auto;
+        margin-left: 6%;
+      }
 
-	.ContenedorDeInformacionInicio{
-		width: 90%;
-		max-width: 560px;
-		background: transparent;
-		margin: 10px;
-		padding: auto;
-		margin-left: 6%;
+      .titulo {
+        color: #c1ff72;
+        font-family: "Ubuntu", sans-serif;
+        letter-spacing: 0.5px;
+        font-size: 25px;
+        font-weight: 900;
+      }
 
-	}
+      .bienvenida {
+        color: rgba(255, 255, 255, 0.884);
+        font-family: "Ubuntu", sans-serif;
+        width: 90%;
+        font-size: 12px;
+      }
 
-	.titulo{
-		color: #c1ff72;
-		font-family: 'Ubuntu', sans-serif;
-		letter-spacing: 0.5px;
-		font-size: 25px;
-		font-weight: 900;
-	}
+      /* From Uiverse.io by mymiamo */
+      .card {
+        margin-top: 20px;
+        width: 280px;
+        height: 240px;
+        padding: 20px;
+        border: 1px solid #0d1117;
+        border-radius: 10px;
+        background-color: #000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+        position: relative;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+      }
 
-	.bienvenida{
-		color: rgba(255, 255, 255, 0.884);
-		font-family: 'Ubuntu', sans-serif;
-		width: 90%;
-		font-size: 12px;
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
 
-	}
+      .mac-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 15px;
+      }
 
+      .mac-header span {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
 
+      .mac-header .red {
+        background-color: #ff5f57;
+      }
 
-/* From Uiverse.io by mymiamo */ 
-.card {
-  margin-top: 20px;
-  width: 280px;
-  height: 240px;
-  padding: 20px;
-  border: 1px solid #0d1117;
-  border-radius: 10px;
-  background-color: #000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
-  position: relative;
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
-}
+      .mac-header .yellow {
+        background-color: #ffbd2e;
+      }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
+      .mac-header .green {
+        background-color: #28c941;
+      }
 
-.mac-header {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 15px;
-}
+      .card-title {
+        font-size: 13px;
+        font-weight: bold;
+        margin: 0 0 10px;
+        color: #e6e6ef;
+      }
 
-.mac-header span {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
+      .card-description {
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 15px;
+      }
 
-.mac-header .red {
-  background-color: #ff5f57;
-}
+      .card .card-tag {
+        display: inline-block;
+        font-size: 10px;
+        border-radius: 5px;
+        background-color: #0d1117;
+        padding: 4px;
+        margin-block-end: 12px;
+        color: #dcdcdc;
+      }
+      .code-editor {
+        background-color: #0d1117;
+        color: #dcdcdc;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          monospace;
+        font-size: 12px;
+        line-height: 1.5;
+        border-radius: 5px;
+        padding: 15px;
+        overflow: auto;
+        height: 150px;
+        border: 1px solid #333;
+        height: 80px;
+      }
 
-.mac-header .yellow {
-  background-color: #ffbd2e;
-}
+      .code-editor::-webkit-scrollbar {
+        width: 8px;
+      }
 
-.mac-header .green {
-  background-color: #28c941;
-}
+      .code-editor::-webkit-scrollbar-thumb {
+        background: #555;
+        border-radius: 4px;
+      }
 
-.card-title {
-  font-size: 13px;
-  font-weight: bold;
-  margin: 0 0 10px;
-  color: #e6e6ef;
-}
+      .code-editor pre code {
+        white-space: pre-wrap;
+        display: block;
+      }
+      a {
+        text-decoration: none;
+      }
 
-.card-description {
-  font-size: 12px;
-  color: #666;
-  margin-bottom: 15px;
-}
+      /* contenedor de los botones de la pantalla principal */
 
-.card .card-tag {
-  display: inline-block;
-  font-size: 10px;
-  border-radius: 5px;
-  background-color: #0d1117;
-  padding: 4px;
-  margin-block-end: 12px;
-  color: #dcdcdc;
-}
-.code-editor {
-  background-color: #0d1117;
-  color: #dcdcdc;
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    monospace;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 5px;
-  padding: 15px;
-  overflow: auto;
-  height: 150px;
-  border: 1px solid #333;
-  height: 80px;
-}
+      .contacsBtn button {
+        border: none;
+        border-radius: 30px;
+        padding: 9px 25px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        background: #c1ff72;
+        color: black;
+        border: 2px solid #c1ff72;
+      }
 
-.code-editor::-webkit-scrollbar {
-  width: 8px;
-}
+      .skillsBtn button {
+        border: none;
+        border-radius: 30px;
+        padding: 9px 25px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background: transparent;
+        color: #c1ff72;
+        border: 2px solid #c1ff72;
+      }
 
-.code-editor::-webkit-scrollbar-thumb {
-  background: #555;
-  border-radius: 4px;
-}
+      .VerMasImg {
+        display: inline-block;
+        position: relative;
+        width: 250px;
+        margin: auto;
+        padding: auto;
+      }
 
-.code-editor pre code {
-  white-space: pre-wrap;
-  display: block;
-}
-a{
-	text-decoration: none;
-}
+      /* From Uiverse.io by marwam112010 */
+      .pack-container {
+        position: relative;
+        display: flex;
+        max-width: 250px;
+        flex-direction: column;
+        border-radius: 12px;
+        background-color: #212121;
+        border: 1px solid #fff;
+        padding: 1.6rem;
+        color: #fff;
+        box-shadow:
+          0 4px 6px -1px rgb(0 0 0 / 0.1),
+          0 2px 4px -2px rgb(0 0 0 / 0.1);
+      }
 
+      .header {
+        position: relative;
+        margin: 0;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        border-radius: 0;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        padding-bottom: 1rem;
+        text-align: center;
+      }
 
-/* contenedor de los botones de la pantalla principal */ 
+      .title {
+        display: block;
+        font-family: sans-serif;
+        font-size: 0.6rem;
+        line-height: 1rem;
+        text-transform: uppercase;
+        color: #fff;
+      }
 
-.contacsBtn button{
-	border: none;
-	border-radius: 30px;
-	padding: 9px 25px;
-	margin-top: 10px;
-	margin-bottom: 20px;
-  margin-left: 5px;
-	background: #c1ff72;
-	color: black;
-	border: 2px solid #c1ff72;
+      .price-container {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 4px;
+        font-family: sans-serif;
+        font-size: 2rem;
+        line-height: 1;
+      }
 
-}
+      .price-container span:first-child {
+        margin-top: -5px;
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
 
-.skillsBtn button{
+      .price-container span:last-child {
+        align-self: flex-end;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
 
-	border: none;
-	border-radius: 30px;
-	padding: 9px 25px;
-	margin-top: 10px;
-	margin-bottom: 20px;
-	background: transparent;
-	color: #c1ff72;
-	border: 2px solid #c1ff72;
-}
+      .lists {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        margin-left: -40px;
+      }
 
-.VerMasImg{
-	display: inline-block;
-	position: relative;
-	width: 250px;
-	margin: auto;
-	padding: auto;
-	
-	
-}
+      .list {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
 
-/* From Uiverse.io by marwam112010 */ 
-.pack-container {
-  position: relative;
-  display: flex;
-  max-width: 250px;
-  flex-direction: column;
-  border-radius: 12px;
-  background-color: #212121;
-  border: 1px solid #fff;
-  padding: 1.6rem;
-  color: #fff;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-}
+      .list span {
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        background-color: rgba(255, 255, 255, 0.185);
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-.header {
-  position: relative;
-  margin: 0;
-  margin-bottom: 1rem;
-  overflow: hidden;
-  border-radius: 0;
-  border-bottom: 1px solid #fff;
-  background: transparent;
-  padding-bottom: 1rem;
-  text-align: center;
-}
+      .list span svg {
+        height: 12px;
+        width: 12px;
+      }
 
-.title {
-  display: block;
-  font-family: sans-serif;
-  font-size: 0.6rem;
-  line-height: 1rem;
-  text-transform: uppercase;
-  color: #fff
-}
+      .list p {
+        display: block;
+        font-family: sans-serif;
+        font-size: 13px;
+      }
 
-.price-container {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 4px;
-  font-family: sans-serif;
-  font-size: 2rem;
-  line-height: 1;
-}
+      .button-container {
+        margin-top: 20px;
+        padding: 0;
+      }
 
-.price-container span:first-child {
-  margin-top: -5px;
-  font-size: 2rem;
-  line-height: 2.5rem;
-}
+      .button-container button {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #000;
+        outline: 0;
+        border: 0;
+        border-radius: 10px;
+      }
+    </style>
 
-.price-container span:last-child {
-  align-self: flex-end;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.lists {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  margin-left: -40px;
-}
-
-.list {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.list span {
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  background-color: rgba(255, 255, 255, 0.185);
-  height: 20px;
-  width: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.list span svg {
-  height: 12px;
-  width: 12px;
-}
-
-.list p {
-  display: block;
-  font-family: sans-serif;
-  font-size: 13px;
-}
-
-.button-container {
-  margin-top: 20px;
-  padding: 0;
-}
-
-.button-container button {
-  display: block;
-  width: 100%;
-  background-color: #fff;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  font-size: 12px;
-  color: #000;
-  outline: 0;
-  border: 0;
-  border-radius: 10px;
-}
-</style>
-
-<!-- cambiar el logo, espacio entre los botones, 
+    <!-- cambiar el logo, espacio entre los botones, 
  por ultimo reducir los iconos del footer -->
+  </div></Layout
+>

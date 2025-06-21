@@ -9,7 +9,7 @@ import "@fontsource/ubuntu";
 // importar iconos de skills
 
 import IconoNodeJS from "../assets/IconoNodeJS.webp";
-import IconoAstro from  "../assets/IconoAstro.jpg";
+import IconoAstro from "../assets/IconoAstro.jpg";
 import IconoJS from "../assets/IconoJS.png";
 import IconoCSS from "../assets/IconoCSS.svg";
 import IconoSQL from "../assets/IconoSQL.webp";
@@ -31,12 +31,9 @@ import IconoPHP from "../assets/IconoPHP.webp";
         </center>
         <p class="TextoDePerfilSkills">Skills</p>
 
-
         <!-- Contenedores y skills [skills] -->
 
-
         <div class="ContenedorDeSkills">
-
             <div class="SkillsContenedor">
                 <div class="SkillsContenedorSub">
                     <img src={IconoNodeJS.src} alt="icono de node js" />
@@ -46,7 +43,10 @@ import IconoPHP from "../assets/IconoPHP.webp";
 
             <div class="SkillsContenedor">
                 <div class="SkillsContenedorSub">
-                    <img src={IconoAstro.src} alt="icono de el framework Astro"/>
+                    <img
+                        src={IconoAstro.src}
+                        alt="icono de el framework Astro"
+                    />
                 </div>
                 <p>Astro</p>
             </div>
@@ -57,8 +57,8 @@ import IconoPHP from "../assets/IconoPHP.webp";
                 </div>
                 <p>JavaScript</p>
             </div>
-            
-                 <div class="SkillsContenedor">
+
+            <div class="SkillsContenedor">
                 <div class="SkillsContenedorSub">
                     <img src={IconoCSS.src} alt="icono de node css" />
                 </div>
@@ -67,7 +67,7 @@ import IconoPHP from "../assets/IconoPHP.webp";
 
             <div class="SkillsContenedor">
                 <div class="SkillsContenedorSub">
-                    <img src={IconoSQL.src} alt="icono de el MySQL"/>
+                    <img src={IconoSQL.src} alt="icono de el MySQL" />
                 </div>
                 <p>MySQL</p>
             </div>
@@ -78,18 +78,13 @@ import IconoPHP from "../assets/IconoPHP.webp";
                 </div>
                 <p>PHP</p>
             </div>
-
-             </div>
-
-
+        </div>
     </div>
     <Footer />
-
 </Layout>
 
 <style>
-
-    .ContenedorDeSkills{
+    .ContenedorDeSkills {
         position: relative;
         width: 100%;
         margin-top: 20px;
@@ -99,8 +94,8 @@ import IconoPHP from "../assets/IconoPHP.webp";
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-     }
-     .SkillsContenedorSub{
+    }
+    .SkillsContenedorSub {
         position: relative;
         width: 70px;
         height: 70px;
@@ -110,84 +105,76 @@ import IconoPHP from "../assets/IconoPHP.webp";
         display: flex;
         justify-content: center;
         align-items: center;
-     }
+    }
 
-     .SkillsContenedor{
+    .SkillsContenedor {
         color: white;
         text-align: center;
         color: rgba(255, 255, 255, 0.884);
-		font-family: 'Ubuntu', sans-serif;
+        font-family: "Ubuntu", sans-serif;
         font-size: 12px;
+    }
 
-
-     }
-
-     .SkillsContenedorSub img{
+    .SkillsContenedorSub img {
         width: 40px;
         height: 40px;
         border-radius: 5px;
         object-fit: contain;
-     }
-
-
-    .ContenedorPrincipalDeSkills{
-       position: relative;
-	   width: 100%;
-	   padding: 30px 0px;
-	   background: rgb(19, 19, 19);
     }
-    .FotoDePerfil{
-      position: relative;
-      height: 100px;
-      width: 100px;
-      background: url('../assets/FotoDePerfil.jpg') center no-repeat;
-      background-size: cover;
-      border-radius: 50px;
-      border: 3px solid #c1ff72;
-      margin-top: 20px;
+
+    .ContenedorPrincipalDeSkills {
+        position: relative;
+        width: 100%;
+        padding: 30px 0px;
+        background: rgb(19, 19, 19);
     }
-    .JesusJM, nav{
+    .FotoDePerfil {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        background: url("../assets/FotoDePerfil.jpg") center no-repeat;
+        background-size: cover;
+        border-radius: 50px;
+        border: 3px solid #c1ff72;
+        margin-top: 20px;
+    }
+    .JesusJM,
+    nav {
         color: white;
-		font-family: 'Ubuntu', sans-serif;
-		letter-spacing: 0.5px;
-		font-size: 20px;
-		font-weight: 900;
+        font-family: "Ubuntu", sans-serif;
+        letter-spacing: 0.5px;
+        font-size: 20px;
+        font-weight: 900;
         display: inline-block;
     }
-    .extenJesusJM{
+    .extenJesusJM {
         color: #c1ff72;
     }
 
-    .ContenedorDeTextoAntesDeSkill{
+    .ContenedorDeTextoAntesDeSkill {
         color: rgba(255, 255, 255, 0.884);
-		font-family: 'Ubuntu', sans-serif;
-		width: 85%;
-		font-size: 12px;
+        font-family: "Ubuntu", sans-serif;
+        width: 85%;
+        font-size: 12px;
         text-align: left;
         max-width: 320px;
     }
-   
-     .TextoDePerfilSkills{
+
+    .TextoDePerfilSkills {
         position: relative;
         text-align: center;
         margin-top: 20px;
         color: #c1ff72;
         padding: 5px 20px;
         border: 2px solid #c1ff72;
-        font-family: 'Ubuntu', sans-serif;
+        font-family: "Ubuntu", sans-serif;
         font-size: 12px;
         width: 80px;
         border-radius: 20px;
         margin: auto;
-        
-
-     }
-       a {
-  -webkit-tap-highlight-color: transparent;
-  text-decoration: none;
-  
-}
-
-
-
+    }
+    a {
+        -webkit-tap-highlight-color: transparent;
+        text-decoration: none;
+    }
 </style>

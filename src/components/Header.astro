@@ -1,37 +1,38 @@
 ---
-import ImgLogo from '../../public/Logo.svg';
-import iconoMenu from '../assets/menu.png';
-import '@fontsource/anton';
+import ImgLogo from "../../public/Logo.svg";
+import iconoMenu from "../assets/menu.png";
+import "@fontsource/anton";
 
-import '@fontsource/ubuntu';
+import "@fontsource/ubuntu";
 
-import FotoDePerfil from '../assets/FotoDePerfil.jpg';
+import FotoDePerfil from "../assets/FotoDePerfil.jpg";
 ---
 
 <!-- contendido de [Header] -->
-
-
-
-
 <header>
   <div class="menu">
-    <img 
-      src={ImgLogo.src} 
-      alt="Logo de la pagina" 
-      class="logo"
-      
-    />
+    <img src={ImgLogo.src} alt="Logo de la pagina" class="logo" />
 
-    <img 
-    src={iconoMenu.src} 
-    alt="Menu de opciones dentro del Header" 
-    class="Iconomenu"
-    id="menuToggle"
+    <img
+      src={iconoMenu.src}
+      alt="Menu de opciones dentro del Header"
+      class="Iconomenu"
+      id="menuToggle"
     />
 
     <nav class="fullscreen-menu" id="fullscreenMenu">
       <button class="close-button" id="closeButton" aria-label="Cerrar menú">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
@@ -42,19 +43,16 @@ import FotoDePerfil from '../assets/FotoDePerfil.jpg';
         <center><div class="FotoDePerfil"></div></center>
         <li><a href="/services">SERVICES</a></li>
         <li><a href="/Proyects">PROYECTS</a></li>
-
       </ul>
     </nav>
   </div>
 </header>
 
 <style>
-
   a {
-  -webkit-tap-highlight-color: transparent;
-  text-decoration: none;
-  
-}
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+  }
 
   .menu {
     position: relative;
@@ -134,19 +132,18 @@ import FotoDePerfil from '../assets/FotoDePerfil.jpg';
   }
 
   .fullscreen-menu a {
-	color: #c1ff72;
-	font-family: 'Ubuntu', sans-serif;
+    color: #c1ff72;
+    font-family: "Ubuntu", sans-serif;
     text-decoration: none;
     font-size: 15px;
     transition: color 0.3s;
-
   }
 
   .fullscreen-menu a:hover {
     color: #ffffff;
   }
 
-  .Iconomenu{
+  .Iconomenu {
     position: absolute;
     width: 25px;
     height: 25px;
@@ -154,72 +151,70 @@ import FotoDePerfil from '../assets/FotoDePerfil.jpg';
     margin: 17px;
   }
 
-
-  .FotoDePerfil{
+  .FotoDePerfil {
     position: relative;
     width: 45px;
     height: 45px;
     border-radius: 50px;
-    background: url('../assets/FotoDePerfil.jpg') center no-repeat;
+    background: url("../assets/FotoDePerfil.jpg") center no-repeat;
     background-size: cover;
-
-
   }
 </style>
 
 <script is:inline>
   // Función para manejar el menú
   const setupMenu = () => {
-    const menuToggle = document.getElementById('menuToggle');
-    const fullscreenMenu = document.getElementById('fullscreenMenu');
-    const closeButton = document.getElementById('closeButton');
-    
+    const menuToggle = document.getElementById("menuToggle");
+    const fullscreenMenu = document.getElementById("fullscreenMenu");
+    const closeButton = document.getElementById("closeButton");
+
     if (!menuToggle || !fullscreenMenu || !closeButton) return;
-    
+
     const toggleMenu = (show) => {
       if (show) {
-        fullscreenMenu.classList.add('active');
-        menuToggle.classList.add('hidden');
-        document.body.style.overflow = 'hidden'; // Previene scroll
+        fullscreenMenu.classList.add("active");
+        menuToggle.classList.add("hidden");
+        document.body.style.overflow = "hidden"; // Previene scroll
       } else {
-        fullscreenMenu.classList.remove('active');
-        menuToggle.classList.remove('hidden');
-        document.body.style.overflow = '';
+        fullscreenMenu.classList.remove("active");
+        menuToggle.classList.remove("hidden");
+        document.body.style.overflow = "";
       }
     };
-    
+
     // Event listeners
-    menuToggle.addEventListener('click', () => toggleMenu(true));
-    closeButton.addEventListener('click', () => toggleMenu(false));
-    
+    menuToggle.addEventListener("click", () => toggleMenu(true));
+    closeButton.addEventListener("click", () => toggleMenu(false));
+
     // Cerrar al hacer clic fuera del menú
-    document.addEventListener('click', (e) => {
-      if (fullscreenMenu.classList.contains('active') && 
-          !fullscreenMenu.contains(e.target) && 
-          e.target !== menuToggle) {
+    document.addEventListener("click", (e) => {
+      if (
+        fullscreenMenu.classList.contains("active") &&
+        !fullscreenMenu.contains(e.target) &&
+        e.target !== menuToggle
+      ) {
         toggleMenu(false);
       }
     });
-    
+
     // Cerrar al presionar Escape
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && fullscreenMenu.classList.contains('active')) {
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && fullscreenMenu.classList.contains("active")) {
         toggleMenu(false);
       }
     });
-    
+
     // Cerrar al hacer clic en enlaces
-    const menuLinks = fullscreenMenu.querySelectorAll('a');
-    menuLinks.forEach(link => {
-      link.addEventListener('click', () => toggleMenu(false));
+    const menuLinks = fullscreenMenu.querySelectorAll("a");
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", () => toggleMenu(false));
     });
   };
-  
+
   // Inicializar cuando el DOM esté listo
-  if (document.readyState !== 'loading') {
+  if (document.readyState !== "loading") {
     setupMenu();
   } else {
-    document.addEventListener('DOMContentLoaded', setupMenu);
+    document.addEventListener("DOMContentLoaded", setupMenu);
   }
 </script>
-
