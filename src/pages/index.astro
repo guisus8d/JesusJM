@@ -54,10 +54,14 @@ languages: JavaScript, PHP<code></pre>
 </div>  
 
 
-
-  <center>
+        <div class="AnuncioWeb">
+        <center>
 	  <img src={JesusJM.src} alt="Imagene ver mas del desarrollo web" class="VerMasImg">
-    </center>
+        </center>
+        </div>
+
+
+
 
       <p class="titulo">
 				From
@@ -70,7 +74,10 @@ languages: JavaScript, PHP<code></pre>
       <a href="/Contact" class="contacsBtnFrom"><button>Contacts</button></a>
 
 	  </div>  
+
+
 	 </div>
+
 	 <Footer />
 </Layout>
 
@@ -280,15 +287,45 @@ a{
 	border: 2px solid #c1ff72;
 }
 
+.AnuncioWeb{
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-0%, -50%);
+}
+
+.VerMasImg{
+	display: inline-block;
+	position: relative;
+	width: 260px;
+	margin: auto;
+	padding: auto;
+}
+
+    @media (max-width: 600px) {
+      .AnuncioWeb{
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  background-color: transparent;
+  position: relative;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .VerMasImg{
 	display: inline-block;
 	position: relative;
 	width: 250px;
 	margin: auto;
 	padding: auto;
-	
-	
 }
+    }
+
 
 </style>
 
