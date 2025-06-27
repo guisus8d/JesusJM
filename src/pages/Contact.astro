@@ -13,10 +13,19 @@ import "@fontsource/ubuntu";
     <div class="ContenedorDeContacto">
         <div class="form-container">
             <div class="form">
-                
-                <form action="https://formsubmit.co/jesusjmorg@gmail.com" method="POST">
+                <form
+                    action="https://jesusjm.org/services/"
+                    method="POST"
+                >
                     <span class="heading">Formulario de <br /> contacto</span>
                     <span class="c1">ponte en contacto</span>
+
+                    <input
+                        type="hidden"
+                        name="_next"
+                        value="https://"
+                    />
+                    <input type="hidden" name="_captcha" value="false" />
 
                     <input
                         class="input"
@@ -24,6 +33,7 @@ import "@fontsource/ubuntu";
                         placeholder="Numero"
                         name="Numero"
                         required
+                        maxlength="10"
                     />
                     <input
                         class="input"
@@ -37,15 +47,14 @@ import "@fontsource/ubuntu";
                         type="text"
                         placeholder="Motivo (Opcional)"
                         name="Motivo"
-                        
                     />
 
                     <span class="c2">Enseguida nos pondremos en contacto.</span>
-                    
+
                     <button type="submit" class="btn-enviar">
-                    <div class="button-container">
-                        <div class="send-button">Enviar</div>
-                    </div>
+                        <div class="button-container">
+                            <div class="send-button">Enviar</div>
+                        </div>
                     </button>
                 </form>
             </div>
@@ -56,7 +65,7 @@ import "@fontsource/ubuntu";
 </Layout>
 
 <style>
-    .btn-enviar{
+    .btn-enviar {
         background: rgb(19, 19, 19);
         border: none;
         width: 150px;
