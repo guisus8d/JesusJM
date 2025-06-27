@@ -13,21 +13,41 @@ import "@fontsource/ubuntu";
     <div class="ContenedorDeContacto">
         <div class="form-container">
             <div class="form">
-                <span class="heading">Formulario de <br> contacto</span>
-                <span class="c1">ponte en contacto</span>
+                
+                <form action="https://formsubmit.co/jesusjmorg@gmail.com" method="POST">
+                    <span class="heading">Formulario de <br /> contacto</span>
+                    <span class="c1">ponte en contacto</span>
 
-                <input class="input" type="text" placeholder="Numero" />
-                   <input class="input" type="email" placeholder="Correo" />
-                      <input class="input" type="text" placeholder="Motivo" />
-                       
-                <span class="c2"
-                    >Enseguida nos pondremos en contacto.</span
-                >
-                <div class="button-container">
-                    <div class="send-button">Enviar</div>
-                   
-                  
-                </div>
+                    <input
+                        class="input"
+                        type="text"
+                        placeholder="Numero"
+                        name="Numero"
+                        required
+                    />
+                    <input
+                        class="input"
+                        type="email"
+                        placeholder="Correo"
+                        name="correo"
+                        required
+                    />
+                    <input
+                        class="input"
+                        type="text"
+                        placeholder="Motivo (Opcional)"
+                        name="Motivo"
+                        
+                    />
+
+                    <span class="c2">Enseguida nos pondremos en contacto.</span>
+                    
+                    <button type="submit" class="btn-enviar">
+                    <div class="button-container">
+                        <div class="send-button">Enviar</div>
+                    </div>
+                    </button>
+                </form>
             </div>
         </div>
     </div>
@@ -36,7 +56,11 @@ import "@fontsource/ubuntu";
 </Layout>
 
 <style>
- 
+    .btn-enviar{
+        background: rgb(19, 19, 19);
+        border: none;
+        width: 150px;
+    }
     .ContenedorDeContacto {
         position: relative;
         width: 100%;
@@ -53,7 +77,7 @@ import "@fontsource/ubuntu";
     }
 
     .form-container {
-         font-family: "Ubuntu", sans-serif;
+        font-family: "Ubuntu", sans-serif;
         max-width: 700px;
         margin: 100px 30px;
         background-color: #0f0f0f;
@@ -124,7 +148,6 @@ import "@fontsource/ubuntu";
         margin-bottom: 20px;
         border-left: 1px solid transparent;
         transition: all 0.2s ease-in-out;
-         
     }
 
     .form-container .form .textarea:focus {
@@ -164,7 +187,7 @@ import "@fontsource/ubuntu";
         .button-container
         .reset-button-container
         .reset-button {
-             font-size: 13px;
+        font-size: 13px;
         position: relative;
         text-align: center;
         padding: 10px;
