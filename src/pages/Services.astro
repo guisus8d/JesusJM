@@ -6,6 +6,7 @@ import Footer from "../components/Footer.astro";
 import "@fontsource/anton";
 import "@fontsource/ubuntu";
 
+import ServicesImg from "../assets/servicesImg/services-img1.svg";
 ---
 
 <Layout title="Servicios - JesusJM">
@@ -18,12 +19,18 @@ import "@fontsource/ubuntu";
         </h4>
 
         <p class="EsloganServicios">
-            Creamos páginas web modernas, responsivas y personalizadas según tus
-            necesidades.
+            Nos enfocamos en ofrecerte un diseño profesional, funcional y
+            atractivo que represente la identidad de tu negocio o proyecto.
+            Utilizamos las últimas tecnologías para garantizar rapidez,
+            seguridad y una experiencia de usuario óptima en cualquier
+            dispositivo, ya sea computadora, tablet o smartphone.
         </p>
-        <center>
-      
-        </center>
+          <a href="/Contact" class="contacsBtn"><button>Contactar</button></a>
+			</div>
+
+        <div class="ContenedorDeImagen">
+            <img src={ServicesImg.src} alt="" />
+        </div>
     </div>
     <Footer />
 </Layout>
@@ -52,8 +59,45 @@ import "@fontsource/ubuntu";
         color: rgba(255, 255, 255, 0.884);
         font-family: "Ubuntu", sans-serif;
         font-size: 12px;
-        width: 70%;
+        width: 50%;
         margin-left: 30px;
         margin-top: -10px;
     }
+
+    .ContenedorDeImagen {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        margin-top: 20px;
+    }
+    .ContenedorDeImagen img {
+        width: 300px;
+        margin: 30px;
+    }
+
+    @media (max-width: 600px) {
+        .ContenedorDeImagen {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .EsloganServicios {
+            width: 85%;
+        }
+    }
+    .contacsBtn button{
+	border: none;
+	border-radius: 30px;
+	padding: 9px 25px;
+	margin-top: 10px;
+    margin-left: 30px;
+	margin-bottom: 20px;
+	background: transparent;
+	color: #c1ff72;
+	border: 2px solid #c1ff72;
+
+}
 </style>
