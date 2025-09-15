@@ -11,6 +11,8 @@
   "dependencies": {
     "@fontsource/anton": "^5.2.6",
     "@fontsource/ubuntu": "^5.2.6",
-    "astro": "^5.9.4"
+    "@netlify/functions": "^4.2.5",
+    "astro": "^5.9.4",
+    "resend": "^6.0.3"
   }
 }
