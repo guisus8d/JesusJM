@@ -13,12 +13,9 @@ import "@fontsource/ubuntu";
     <div class="ContenedorDeContacto">
         <div class="form-container">
             <div class="form">
-                <form id="contactForm" method="POST">
+                <form id="contactForm" method="POST" class="tu-clase-css">
                     <span class="heading">Formulario de <br /> contacto</span>
                     <span class="c1">ponte en contacto</span>
-
-                    <input type="hidden" name="_next" value="https://" />
-                    <input type="hidden" name="_captcha" value="false" />
 
                     <input
                         class="input"
@@ -27,6 +24,8 @@ import "@fontsource/ubuntu";
                         name="Numero"
                         required
                         maxlength="10"
+                        pattern="[0-9]{10}"
+                        title="Debe tener exactamente 10 dígitos"
                     />
                     <input
                         class="input"
@@ -49,6 +48,12 @@ import "@fontsource/ubuntu";
                             <div class="send-button">Enviar</div>
                         </div>
                     </button>
+
+                    <div
+                        id="formMessage"
+                        style="display: none; margin-top: 20px; padding: 10px; border-radius: 5px;"
+                    >
+                    </div>
                 </form>
             </div>
         </div>
@@ -56,11 +61,8 @@ import "@fontsource/ubuntu";
 
     <script src="../services/Contacto.js"></script>
 
-
-
     <Footer />
 </Layout>
-
 
 <style>
     .btn-enviar {
