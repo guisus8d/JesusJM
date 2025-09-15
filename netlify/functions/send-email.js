@@ -4,10 +4,28 @@ const { Resend } = require('resend');
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 exports.handler = async (event, context) => {
+  // ✅ HANDLE OPTIONS PARA CORS (OBLIGATORIO)
+  if (event.httpMethod === 'OPTIONS') {
+    return {
+      statusCode: 200,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS'
+      },
+      body: ''
+    };
+  }
+
   // Solo permitir método POST
   if (event.httpMethod !== 'POST') {
     return {
       statusCode: 405,
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type'
+      },
       body: JSON.stringify({ error: 'Método no permitido' })
     };
   }
@@ -27,6 +45,11 @@ exports.handler = async (event, context) => {
     if (!phone || !email) {
       return {
         statusCode: 400,
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Headers': 'Content-Type'
+        },
         body: JSON.stringify({ error: 'Faltan campos requeridos' })
       };
     }
@@ -36,6 +59,11 @@ exports.handler = async (event, context) => {
     if (!emailRegex.test(email)) {
       return {
         statusCode: 400,
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Headers': 'Content-Type'
+        },
         body: JSON.stringify({ error: 'Formato de email inválido' })
       };
     }
@@ -45,14 +73,19 @@ exports.handler = async (event, context) => {
     if (!phoneRegex.test(phone)) {
       return {
         statusCode: 400,
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Headers': 'Content-Type'
+        },
         body: JSON.stringify({ error: 'Teléfono debe tener 10 dígitos' })
       };
     }
 
     // Enviar email usando Resend
     const { data, error } = await resend.emails.send({
-      from: 'JesusJM <onboarding@resend.dev>', // Cambia esto por tu dominio verificado
-      to: ['jimenezmartinezjesus76.com'], // Email donde recibirás los mensajes
+      from: 'JesusJM <onboarding@resend.dev>',
+      to: ['jimenezmartinezjesus76@gmail.com'], // ✅ EMAIL CORREGIDO
       subject: `Nuevo contacto: ${subject}`,
       html: `
         <!DOCTYPE html>
@@ -103,6 +136,11 @@ exports.handler = async (event, context) => {
       console.error('Error de Resend:', error);
       return {
         statusCode: 500,
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Headers': 'Content-Type'
+        },
         body: JSON.stringify({ error: 'Error al enviar el email' })
       };
     }
@@ -126,6 +164,11 @@ exports.handler = async (event, context) => {
     console.error('Error interno:', error);
     return {
       statusCode: 500,
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type'
+      },
       body: JSON.stringify({ error: 'Error interno del servidor' })
     };
   }
