@@ -9,12 +9,12 @@ import "@fontsource/ubuntu";
 // Imagenes de el apartado de proyectos
 import ProyectoUNO from "../assets/proyectos/ProyectoUNO.webp";
 import ProyectoDOS from "../assets/proyectos/ProyectoDOS.webp";
-
+import ProyectoTRES from "../assets/proyectos/img-project-Hotel.png"
 
 import IconoGitHub from "../assets/proyectos/IconoGitHub.svg";
 ---
 
-<Layout title = "Portafolio - Jesús JM">
+<Layout title="Portafolio - Jesús JM">
     <Header />
 
     <div class="ContenedorPrincipalProyectos">
@@ -30,11 +30,9 @@ import IconoGitHub from "../assets/proyectos/IconoGitHub.svg";
                 <p class="TituloDelProyecto"><strong>Arcade Lunar</strong></p>
 
                 <p class="DescripcionDelProyecto">
-
-                      Desarrollo de la version beta de la web de Arcade Lunar 
-                    Este proyecto tiene como objetivo principal servir como
-                    el canal oficial para presentar la aplicación a su audiencia.
-                  
+                    Desarrollo de la version beta de la web de Arcade Lunar Este
+                    proyecto tiene como objetivo principal servir como el canal
+                    oficial para presentar la aplicación a su audiencia.
                 </p>
 
                 <a href="https://arcadelunar.netlify.app/">
@@ -44,8 +42,6 @@ import IconoGitHub from "../assets/proyectos/IconoGitHub.svg";
                         alt="icono de git hub para redirigir al usuario al repositorio git hub"
                     />
                 </a>
-
-         
             </div>
         </div>
 
@@ -72,13 +68,35 @@ import IconoGitHub from "../assets/proyectos/IconoGitHub.svg";
                         alt="icono de git hub para redirigir al usuario al repositorio git hub"
                     />
                 </a>
-
-       
-              
             </div>
         </div>
 
+        <div class="Proyectos">
+            <img
+                class="ImgDeProyectos"
+                src={ProyectoTRES.src}
+                alt="Imagen del primer proyecto de el apartado de proyectos"
+            />
+            <div class="ContenedorDeTextoDelproyecto">
+                <p class="TituloDelProyecto"><strong>Hotel Santa Cruz Tehuantepec</strong></p>
 
+                <p class="DescripcionDelProyecto">
+                    Desarrollo de la página web para el Hotel Santa Cruz
+                    Tehuantepec, con el objetivo de proporcionar a los usuarios
+                    una plataforma en línea para obtener información sobre el
+                    hotel, sus servicios y realizar reservas de manera
+                    conveniente.
+                </p>
+
+                <a href="https://hotelsantacruztehuantepec.com/">
+                    <img
+                        class="IconoGitHubDelProyecto"
+                        src={IconoGitHub.src}
+                        alt="icono de git hub para redirigir al usuario al repositorio git hub"
+                    />
+                </a>
+            </div>
+        </div>
     </div>
 
     <Footer />
@@ -142,7 +160,7 @@ import IconoGitHub from "../assets/proyectos/IconoGitHub.svg";
     .IconoGitHubDelProyecto {
         position: relative;
         width: 30px;
-        
+
         margin: 8px;
         left: 10px;
     }
